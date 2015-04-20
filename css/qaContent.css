@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#qaContent {
+	width:auto;
+}
+#qaContent ul.accordionPart {
+	margin: 10px 10px 50px 30px;
+}
+#qaContent ul.accordionPart li {
+	border-bottom: solid 1px #e3e3e3;
+	padding-bottom: 12px;
+	margin-top: 12px;
+}
+#qaContent ul.accordionPart li .qa_title {
+	background:url(../img/icon_q_a.png) no-repeat 0px 3px;
+	padding-left: 28px;
+	color: #FFF;
+	cursor: pointer;
+}
+#qaContent ul.accordionPart li .qa_title_on {
+	text-decoration: underline;
+}
+#qaContent ul.accordionPart li .qa_content {
+	margin: 6px 0 0;
+	background: url(../img/icon_q_a.png) no-repeat 0px -24px;
+	padding-left: 28px;
+	color:#999999;
+}

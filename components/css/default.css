@@ -1,0 +1,472 @@
+@charset "UTF-8";
+
+body {
+	background: url(../img/body_bg.gif) repeat-x #1a1a1a;
+	font-family: "微軟正黑體",  Arial, Helvetica, sans-serif, "新細明體", Osaka, "標楷體";
+	font-size: 15px;
+	color: #FFF;
+	margin: 0 auto;
+	text-align: center;
+	}
+
+p {
+	text-indent:18pt;
+	line-height: 1.5em;
+	padding: 5px 0;
+	margin: 0;
+	}
+	
+dl {
+	clear: both;
+	line-height: 1.7em;
+	margin: 0;
+	padding: 0;
+	}
+	
+dt {
+	clear: both;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 6em;
+	}
+	
+dd {
+	margin-left: 6em;
+	padding: 0;
+	}
+	
+h1,h2,h3 {
+	font-size: 20px;
+	line-height: 1em;
+	font-weight: bold;
+	margin:0;
+	padding: 0;
+	}
+	
+a, a:link {
+	color: #6c5a44;
+	text-decoration: none;
+	}
+	
+a:hover {
+	text-decoration: underline;
+	}
+	
+.clear_both {
+	clear: both;
+	font-size: 1px;
+	height: 1px;
+	}
+
+#wrapper {
+	background: url(../img/header_bg.jpg) repeat-x;	/*讀取 header_bg 圖片*/
+	margin: 0 auto;	/*邊界 0*/
+	/*固定*/
+	width:100%;	/*寬度100%*/
+	position:fixed;	/*絕對配置且固定要素位置*/	
+	top:0;	/*上方位置為 0*/
+	_position: absolute; /* position fixed for IE6 */
+	_top:expression(documentElement.scrollTop+"px");
+	z-index:1;	/*圖層順序為 1*/	
+    /*固定*/
+	}
+	
+#header {
+	margin: 0 auto;
+	background: url(../img/header_bg.jpg) repeat-x;
+	height: 85px;
+	text-align:right;
+	width: 800px;
+	}
+	
+#content {
+	background:url(../img/content_bg.gif) repeat-x;
+	}
+	
+#content_wrap {
+	margin: 0 auto;
+	padding: 15px 0;
+	text-align: left;
+	width: 800px;
+	}
+	
+#footer {
+	background: #b12901;
+	font-size: 10px;
+	padding: 8px;
+	text-align: center;
+	}
+	
+/* =============== TEXT ================= */
+.page_top {
+	text-align: right;
+	padding: 8px 0 5px;
+	margin-bottom: 15px;
+	}
+	
+
+.content_h2 {
+	background:url(../img/title_bg.gif) no-repeat;
+	padding: 20px 50px;
+	height: 50px;
+	}
+
+#copy {
+  padding-top: 6px;
+  padding-bottom: 4px;
+  line-height: 2em;
+}
+
+
+/* =============== HEADER ================= */
+
+#head_logo {
+	float: left;
+	padding: 15px 0 0 15px;
+	width: 450px;
+	text-align:left;
+	}
+	
+#header h1 {
+	font-size: 12px;
+	font-weight: normal;
+	}
+	
+#head_right {
+	float: right;
+	width: 290px;
+	padding: 10px 10px 0px 0px;
+	}
+	
+/* =============== MENU BAR ================= */
+#menubar {
+	margin: 0 auto;	/*邊界 0*/
+	background: url(../img/menubar_bg.gif) repeat-x;	/*讀取 header_bg 圖片*/
+	height: 55px;	/*高度 55px*/
+	/*固定*/
+    width:100%;	/*寬度100%*/	
+    position:fixed; /*絕對配置且固定要素位置*/
+    bottom:25px;	/*下方位置 25px 為配合網站地圖升高 25px*/
+    _position: absolute; /* position fixed for IE6 */
+    _top:expression(documentElement.scrollTop+documentElement.clientHeight-this.clientHeight-4);
+	z-index:2;	/*圖層順序為 2*/	
+	/*固定*/
+	}
+	
+#menubar_wrap {
+	margin: 0 auto;
+	text-align: left;
+	width: 800px;
+	}
+	
+#menubar a {
+	display: block;
+	height: 40px;
+	float: left;
+	padding: 15px 0 0 15px;
+	width: 145px;
+	}
+	
+*html #menubar a {/*IE6*/
+	width: 144px;
+	}
+	
+#menubar a:hover {
+	background-position: 0 -55px;
+	text-decoration: none;
+	}
+	
+.menu_a {
+	background: url(../img/menu_btn_bg.gif) no-repeat;
+	}
+	
+.menu_b {
+	background-image: url(../img/menu_btn_bg_b.gif);
+	}
+
+*html .menu_b {/*IE6*/
+	background-image: url(../img/menu_btn_bg_b.gif) right;
+	}
+
+#menubar h2 {
+	color: #5b0000;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 0 3px;
+	margin: 0;
+	}	
+	
+/* =============== MAIN VIS================= */
+
+#main_vis {
+	margin: 0 auto;
+	background: url(../img/main_vis_bg.gif) repeat-y center;
+	padding: 85px 0 20px 0;
+	}
+
+#move_vis {
+	margin: 0 auto;
+	background: url(../img/main_vis_bg.gif) repeat-y center;
+	padding: 30px 0 20px 40px;
+	}
+	
+/* =============== CONTENT LEFT ================= */
+#content h2 {
+	font-size: 12px;
+	font-weight: normal;
+	}
+
+/* =============== Secondary page ================= */
+
+#sec_content {
+	margin: 0 auto;
+	text-align: left;
+	padding: 100px 0 40px 0;
+	width: 800px;
+	}
+	
+#sec_content img {
+	border: 1px solid #795600;
+	}
+
+.company_info {
+	margin-bottom: 15px; 
+	}
+	
+/* =============== CONCEPT ================= */
+
+div.concept div{
+	display:table-cell;
+	vertical-align:top;
+	}
+
+* html div.concept div{/* IE 6 */
+	display:inline;
+	zoom:1;
+	}
+
+*:first-child+html div.concept div{/* IE 7 */
+	display:inline;
+	zoom:1;
+	}
+
+.concept_text {
+	padding-left: 20px;
+	width: 420px;
+	}
+	
+*html .concept_text {/*IE6*/
+	width: 420px;
+	}
+	
+.concept h2 {
+	background: url(../img/ttl_concept_bg.gif) no-repeat;
+	color: #fdd42a;
+	height: 50px;
+	margin-bottom: 10px;
+	padding: 10px 0 0 50px;
+	}
+	
+.concept h3 {
+	font-size: 13px;
+	line-height: 1.5em;
+	padding: 0 0 10px 40px;
+	}
+	
+.concept_p  {
+	font-size:16px;
+	text-indent:0;
+	}
+	
+.concept p, .concept ul {
+	text-indent:20px;
+	padding: 0 40px;
+	}
+	
+.concept_font {
+	color:#CC0000;
+	}
+	
+.concept_li {
+	font-weight:bold;	
+	} 
+		
+/* =============== PICK UP ================= */
+
+.pickup {
+	font-size: 11px;
+	}
+	
+.pickup h3,h4 {
+	font-size: 12px;
+	}
+	
+.pickup h3 {
+	color: #d69583;
+	}
+	
+div.pickup div{
+	display:table-cell;
+	vertical-align:top;
+	}
+
+* html div.pickup div{/* IE 6 */
+	display:inline;
+	zoom:1;
+	}
+
+*:first-child+html div.pickup div{/* IE 7 */
+	display:inline;
+	zoom:1;
+	}	
+	
+.pickup_text {
+	padding-left: 30px;
+	width: 180px;
+	}
+
+*html .pickup_text {/*IE6*/
+	width: 170px;
+	}
+	
+*:first-child+html .pickup_text {/*IE6*/
+	width: 170px;
+	}
+	
+.pickup_row {
+	margin-bottom: 20px;
+	}
+
+.pickup_left {
+	float: left;
+	width: 375px;
+	}
+	
+.pickup_right {
+	float: right;
+	width: 375px;
+	}
+	
+*html .pickup_left {/*IE6*/
+	width: 370px;
+	}
+
+*html .pickup_right {/*IE6*/
+	width: 370px;
+	}
+	
+/* =============== FOOD MANU ================= */
+
+.food_menu {
+	line-height: 1.5em;
+	}
+
+.foodmenu_float {
+	float: left;
+	margin-right: 15px;
+	width: 260px;
+	}
+	
+.foodmenu_right {
+	float: right;
+	width: 248px;
+	}
+
+.food_menu dt {
+	width: 17em;
+	}
+	
+.food_menu dd {
+	border-bottom: 1px solid #1a1a1a;
+	/*margin-left: 12em;*/
+	text-align: right;
+	}
+	
+.food_menu ul {
+	text-indent:20px;
+	padding: 0 15px;
+	}
+.food_menu li {
+	color:#FFFFFF;
+	} 
+	
+.food_menu h3 {
+	color: #fdd42a;
+	font-size: 16px;
+	font-weight:bold;
+	/*font-weight: normal;*/
+	padding: 5px 0 3px;
+	}
+	
+.food_menu_right {
+	float: right;
+	width: 525px;
+	padding: 10px 10px 0px 0px;
+	}
+	
+.food_tools_right {
+	float: right;
+	width: 75px;
+	padding: 10px 10px 0px 0px;
+	}
+	
+	
+/* =============== SHOP ================= */
+
+
+.shop_info {
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: left;
+	width: 800px;
+	}
+	
+.shop_img {
+	margin-right: 10px;
+	float: left;
+	}
+	
+.shop_img_end {
+	margin: 0;
+	float: right;
+	}
+	
+.shop_left {
+	float: left;
+	width: 450px;
+	}
+	
+.shop_left a {
+	color:#CA9D28;
+	}
+	
+.shop_right {
+	float: right;
+	width: 310px;	
+	}
+	
+.shopinfo_h2 {
+	background: url(../img/ttl_about_bg.gif) no-repeat;
+	height: 60px;
+	padding: 10px 50px;
+	}
+
+.shop_info dl {
+	border-top: 1px dotted #666;
+	line-height: 2em;
+	margin: 0 40px 0 15px;
+	padding: 0;
+	}
+	
+.shop_info dt,dd {
+	border-bottom: 1px dotted #666;
+	}
+	
+.shop_info dd {
+	color: #CCC;
+	}
+	
+.map {
+	border: 0px solid #333;
+	}
